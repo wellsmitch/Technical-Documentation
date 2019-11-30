@@ -1,0 +1,20 @@
+本资源可以帮助前端开发人员更容易的上手antd design pro
+1、生成器函数、fetch交互（头部信息、token选择性传参等）、路由、saga等js逻辑解读
+2、权限解读（包括reloadAuthorized（），setAuthority（）等多种方法的作用）
+3、跨域解决方案（proxy）
+4、命名空间（namespace）
+5、ant design pro文件介绍
+
+
+	//项目导航
+	var nav_url = [
+				'http://10.0.0.120:8080/dzzw',
+				'http://10.0.0.120:8081/ywsp/sso/login',				
+        	    "http://10.0.0.95/bdccas/RealEstate/self/index",
+                "http://10.0.0.114:8010/onemap",
+                "http://10.0.0.95:8080/zhjg_cs/sso/login",
+				'http://16.16.128.130/smartplan'
+            ]
+	$('.item_nav').click(function(){
+		window.location.href = nav_url[$(this).index('.item_nav')]
+	})
